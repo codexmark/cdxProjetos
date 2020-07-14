@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "540713329994",
+    "firebase_url": "https://cdxdelivery.firebaseio.com",
+    "project_id": "cdxdelivery",
+    "storage_bucket": "cdxdelivery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540713329994:android:f3f51fd852a9db67c20db3",
+        "android_client_info": {
+          "package_name": "com.cdxdelivery.sadi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540713329994-21ql42ogj4ugqvghbrmuo2js3qci7eq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfdTsZ_NgK1T37XO199I_nXgA4Va4yXUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540713329994-21ql42ogj4ugqvghbrmuo2js3qci7eq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
