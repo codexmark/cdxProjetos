@@ -10,6 +10,7 @@ class LoginPage extends StatelessWidget {
     // Captura o tema do titulo
     TextStyle titleTheme = Theme.of(context).textTheme.headline6.copyWith(
           color: Layout.light(),
+          fontStyle: (FontStyle.normal),
         );
 
     return Scaffold(
@@ -31,7 +32,7 @@ class LoginPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(150),
                       color: Layout.dark(.8),
                     ),
-                    child: Image.asset('assets/pizza-logo-2.png'),
+                    child: Image.asset('assets/logo1.png'),
                   ),
                   borderRadius: BorderRadius.circular(150),
                 ),
@@ -53,9 +54,9 @@ class LoginPage extends StatelessWidget {
                     boxShadow: [
                       BoxShadow(
                         color: Layout.dark(),
-                        offset: const Offset(0, 0),
-                        spreadRadius: 3,
-                        blurRadius: 10,
+                        offset: const Offset(0, -3),
+                        spreadRadius: 8,
+                        blurRadius: 15,
                       ),
                     ],
                   ),
@@ -126,7 +127,7 @@ class LoginPage extends StatelessWidget {
                         width: double.infinity,
                         height: 50,
                         child: FlatButton(
-                          color: Layout.info(),
+                          color: Layout.secondary(),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.all(
                               Radius.circular(10),

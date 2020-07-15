@@ -4,12 +4,12 @@ class Layout {
   static Widget render(Widget content, [String title = 'Delivery App']) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Delivery App'),
+        title: Text('Hamburgão Delivery'),
       ),
       body: content,
       floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          tooltip: 'Increment',
+          tooltip: 'Fazer um novo pedido',
           child: Icon(Icons.add, color: Layout.light(), size: 23)),
     );
   }

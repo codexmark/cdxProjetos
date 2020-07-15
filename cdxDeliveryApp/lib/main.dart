@@ -2,22 +2,20 @@ import 'package:delivery_app/views/layout.dart';
 import 'package:delivery_app/views/login/login_page.dart';
 import 'package:delivery_app/views/home/home_page.dart';
 import 'package:flutter/material.dart';
-// import 'package:onesignal_flutter/onesignal_flutter.dart';
+import 'package:onesignal_flutter/onesignal_flutter.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // ]
-    // Start OneSignal connection
-    // OneSignal.shared.init('02d41705-3373-4da2-8c23-7e0e77f8c239');
+    //Start OneSignal connection
+    OneSignal.shared.init('c35423d9-779c-4575-9241-748ceb914593');
 
-    // OneSignal.shared.setInFocusDisplayType(OSNotificationDisplayType.none);
+    //OneSignal.shared.setInFocusDisplayType(OSNotificationDisplayType.none);
 
-    // OneSignal.shared.setNotificationReceivedHandler((OSNotification notification) {
-
-    // });
+    // OneSignal.shared
+    // .setNotificationReceivedHandler((OSNotification notification) {});
 
     return MaterialApp(
       title: 'Flutter Demo',
