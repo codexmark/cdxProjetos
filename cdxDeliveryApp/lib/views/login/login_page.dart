@@ -36,7 +36,7 @@ class LoginPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(150),
                 ),
                 SizedBox(height: 10),
-                Text('Delivery App', style: titleTheme),
+                Text('Hamburgão Lanches Delivery', style: titleTheme),
               ],
             ),
           ),
@@ -176,7 +176,8 @@ class LoginPage extends StatelessWidget {
 
   double _calcContentHeight(BuildContext context) {
     var totalHeight = MediaQuery.of(context).size.height;
-    var heightAvailable = totalHeight - MediaQuery.of(context).viewInsets.bottom;
+    var heightAvailable =
+        totalHeight - MediaQuery.of(context).viewInsets.bottom;
     var heightIWant = MediaQuery.of(context).size.height * .6;
 
     var result = heightIWant;

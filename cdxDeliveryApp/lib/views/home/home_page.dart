@@ -24,12 +24,20 @@ class HomePage extends StatelessWidget {
           default:
             return Center(
               child: ListView(
-                children: snapshot.data.documents.map<Widget>((DocumentSnapshot doc) {
+                children:
+                    snapshot.data.documents.map<Widget>((DocumentSnapshot doc) {
                   return ListTile(
-                    leading: Icon(Icons.people, size: 52),
-                    title: Text("${doc.data['cliente_nome']}"),
-                    subtitle: Text("Valor total: ${doc.data['valor_total'].toString()}"),
-                  );
+                      leading: Icon(Icons.people, size: 52),
+                      title: Text("${doc.data['cliente_nome']}"),
+                      subtitle: Text(
+                          "Valor total RS:${doc.data['valor_total'].toString()}"),
+                      trailing: RaisedButton(
+                        onPressed: () {},
+                        child: Text(
+                          'D',
+                          style: TextStyle(color: Layout.light()),
+                        ),
+                      ));
                 }).toList(),
               ),
             );
@@ -38,13 +46,12 @@ class HomePage extends StatelessWidget {
     );
 
     return Layout.render(
-      context,
-      child: Column(
+      Column(
         children: <Widget>[
           Container(
             color: Layout.dark(),
             height: 150,
-            child: Center(child: Text('IMG')),
+            child: Center(child: Text('Banner do hamburgão')),
           ),
           Container(
             height: 100,
@@ -57,23 +64,14 @@ class HomePage extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 3,
                   height: 80,
                   color: Colors.blueGrey,
-                  margin: EdgeInsets.all(10),
-                  child: Center(child: Text('IMG')),
+                  margin: EdgeInsets.all(3),
+                  child: Center(child: Text('IMG de produtos...')),
                 );
               },
             ),
           ),
           Expanded(child: content),
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        tooltip: 'Increment',
-        backgroundColor: Layout.info(),
-        child: Icon(
-          Icons.add,
-          color: Layout.light(),
-        ),
       ),
     );
   }
